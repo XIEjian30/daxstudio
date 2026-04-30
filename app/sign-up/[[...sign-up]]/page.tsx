@@ -28,8 +28,7 @@ export default function SignUpPage() {
               footerActionLink: "text-indigo-600 hover:text-indigo-700",
             },
           }}
-          afterSignUpUrl="/dashboard"
-          afterSignInUrl="/dashboard"
+          // afterSignUpUrl 和 afterSignInUrl 已移除，统一在 ClerkProvider 中设置
         />
       </div>
     </div>

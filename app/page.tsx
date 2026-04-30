@@ -41,8 +41,8 @@ export default function Home() {
           {/* 桌面导航 */}
           <div className="hidden md:flex items-center gap-10 text-sm font-medium text-zinc-300">
             <a href="#" className="hover:text-white transition-colors">首页</a>
-            <a href="#" className="hover:text-white transition-colors">作品</a>
-            <a href="#" className="hover:text-white transition-colors">服务</a>
+            <a href="#" className="hover:text-white transition-colors">关于</a>
+            <a href="#" className="hover:text-white transition-colors">建议</a>
             <a href="#" className="hover:text-white transition-colors">关于我们</a>
           </div>
 
@@ -51,7 +51,7 @@ export default function Home() {
             <div className="hidden md:flex items-center gap-6">
               <a href="/dashboard" className="text-zinc-300 hover:text-white transition">仪表盘</a>
               <a href="/profile" className="text-zinc-300 hover:text-white transition">个人资料</a>
-              <UserButton afterSignOutUrl="/" />
+              <UserButton />   {/* ← 已修复：移除 afterSignOutUrl */}
             </div>
           </Show>
 
@@ -97,9 +97,9 @@ export default function Home() {
           {/* 右侧内容 */}
           <div className="order-1 md:order-2 max-w-md mx-auto md:mx-0 w-full">
             <div className="mb-12 text-center md:text-left">
-              <p className="text-zinc-400 text-xl md:text-2xl">欢迎回来</p>
+              <p className="text-zinc-400 text-xl md:text-2xl"></p>
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter text-white mt-3">
-                登录 DAaaXIE Studio
+                 DAaaXIE Studio
               </h1>
             </div>
 
@@ -133,7 +133,7 @@ export default function Home() {
                   >
                     进入仪表盘
                   </a>
-                  <UserButton afterSignOutUrl="/" />
+                  <UserButton />     {/* ← 已修复：移除 afterSignOutUrl */}
                 </div>
               </div>
             </Show>

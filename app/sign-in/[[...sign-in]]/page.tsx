@@ -32,8 +32,7 @@ export default function SignInPage() {
               socialButtonsVariant: "blockButton",
             },
           }}
-          afterSignInUrl="/dashboard"
-          afterSignUpUrl="/dashboard"
+          // afterSignInUrl 和 afterSignUpUrl 已移除，统一在 ClerkProvider 中设置
         />
       </div>
     </div>
