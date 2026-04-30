@@ -11,7 +11,7 @@ export default async function Dashboard() {
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-10">
           <h1 className="text-4xl font-bold">仪表盘</h1>
-          <UserButton />   {/* 必须是这一行，没有 afterSignOutUrl */}
+          <UserButton />   {/* ← 必须是这一行！不要带 afterSignOutUrl */}
         </div>
 
         <div className="bg-white rounded-2xl shadow p-8">
